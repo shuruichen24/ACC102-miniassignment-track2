@@ -5,6 +5,7 @@ This project analyzes the profitability performance of the US technology industr
 
 ## 2. Data
 Data source: **WRDS Compustat Annual Fundamental Database**, covering the period 2020–2025.
+
 Access date: 24 April 2026
 Key fields include:
 - `gvkey`: Firm identifier
