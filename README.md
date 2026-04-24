@@ -1,5 +1,7 @@
 # ACC102 Mini Assignment - Track 2: Profitability Analysis of US Technology Companies
 
+ **[Click here to view the full analysis notebook](https://github.com/shuruichen24/ACC102-miniassignment-track2/blob/main/ACC102_MiniAssignment_Track2.ipynb)**
+
 ## 1. Problem & User
 This project analyzes the profitability performance of the US technology industry from 2020 to 2025, and compares the net profit margins of three leading tech giants: Apple, Microsoft, and NVIDIA. It is designed for finance and accounting students and novice investors interested in understanding sector and firm-level profitability trends.
 
