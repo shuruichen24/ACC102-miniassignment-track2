@@ -1,33 +1,45 @@
-# ACC102-miniassignment-track2
-## Project Topic
-Profitability analysis of US technology companies from 2020 to 2025
+# ACC102 Mini Assignment - Track 2: Profitability Analysis of US Technology Companies
 
-## Analytical Problem
-This project explores the profitability trend of the technology industry.
-It also compares net profit performance among three typical tech enterprises,
-including Apple, Microsoft and NVIDIA.
+## 1. Problem & User
+This project analyzes the profitability performance of the US technology industry from 2020 to 2025, and compares the net profit margins of three leading tech giants: Apple, Microsoft, and NVIDIA. It is designed for finance and accounting students and novice investors interested in understanding sector and firm-level profitability trends.
 
-## Target Audience
-Finance and accounting undergraduate students and novice investors.
+## 2. Data
+Data source: **WRDS Compustat Annual Fundamental Database**, covering the period 2020–2025.
+Access date: 24 April 2026
+Key fields include:
+- `gvkey`: Firm identifier
+- `conm`: Company name
+- `sich`: Standard Industrial Classification (SIC) code
+- `fyear`: Fiscal year
+- `sale`: Net sales (revenue)
+- `gp`: Gross profit
+- `ni`: Net income
 
-## Data Source
-WRDS Compustat annual fundamental financial dataset
-Time range: 2020 - 2025
+The industry scope is defined using SIC codes between 3000–9000 to focus on technology-related sectors.
 
-## Analysis Process
-1. Connect WRDS database and obtain raw financial data
-2. Conduct data cleaning, remove missing values and unreasonable outliers
-3. Calculate gross profit margin and net profit margin
-4. Analyse overall industry profitability trend
-5. Compare individual firm performance through data visualisation
+## 3. Methods
+The analysis follows these main steps:
+1.  **Data Acquisition**: Connect to the WRDS database and extract the full dataset for 2020–2025.
+2.  **Data Cleaning**: Remove observations with missing financial values (`sale`, `gp`, `ni`), filter out firms with non-positive revenue, and calculate gross and net profit margins.
+3.  **Industry Trend Analysis**: Use SIC codes to filter the tech industry, then calculate the average gross and net profit margins per year.
+4.  **Firm Comparison**: Select Apple, Microsoft, and NVIDIA, and plot their net profit margin trends for comparison.
 
-## Key Findings
-The technology industry maintains relatively stable gross profitability from 2020 to 2025.
-Microsoft shows steady profit performance during the whole period.
-Apple has slow and stable profit growth.
-NVIDIA experiences obvious profit fluctuation and rapid profit growth in 2023.
+## 4. Key Findings
+- The US technology industry’s gross profit margin remains stable at around 45–48% throughout 2020–2025, reflecting consistent cost control.
+- The industry’s net profit margin shows mild but steady growth, rising from around 5% in 2020 to nearly 10% in 2025.
+- Microsoft maintains the most stable performance, with net profit margins consistently between 30–37%.
+- Apple’s net profit margin gradually improves from ~21% in 2020 to ~28% in 2025.
+- NVIDIA exhibits a dramatic V-shaped trend: its margin dropped to ~17% in 2022 before surging to nearly 50% in 2023, driven by AI chip demand.
 
-Due to delayed data update on WRDS, available observations of NVIDIA only cover 2020 to 2023.
+## 5. How to Run
+To run this notebook, you need:
+1.  Python 3 with the following libraries installed:
+    - `pandas`
+    - `matplotlib`
+    - `wrds`
+2.  A valid WRDS account to access the Compustat database.
+3.  Clone this repository and open the `.ipynb` file in Jupyter Notebook or JupyterLab.
 
-## Academic Statement
-All data processing, analysis and personal understanding are finished independently.
+## 6. Limitations & Next Steps
+- **Limitations**: NVIDIA’s data is incomplete beyond 2023, and the analysis is limited to profit margins without considering other metrics like revenue growth.
+- **Next Steps**: The analysis could be extended to include more tech firms, compare performance across different sub-sectors, or incorporate additional financial ratios for a more comprehensive evaluation.
