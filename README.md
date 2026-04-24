@@ -42,6 +42,9 @@ To run this notebook, you need:
 2.  A valid WRDS account to access the Compustat database.
 3.  Clone this repository and open the `.ipynb` file in Jupyter Notebook or JupyterLab.
 
-## 6. Limitations & Next Steps
+## 6.Product link /Demo
+https://github.com/shuruichen24/ACC102-miniassignment-track2
+
+## 7. Limitations & Next Steps
 - **Limitations**: NVIDIA’s data is incomplete beyond 2023, and the analysis is limited to profit margins without considering other metrics like revenue growth.
 - **Next Steps**: The analysis could be extended to include more tech firms, compare performance across different sub-sectors, or incorporate additional financial ratios for a more comprehensive evaluation.
