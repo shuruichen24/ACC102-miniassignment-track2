@@ -37,12 +37,24 @@ The analysis follows these main steps:
 
 ## 5. How to Run
 To run this notebook, you need:
-1.  Python 3 with the following libraries installed:
-    - `pandas`
-    - `matplotlib`
-    - `wrds`
-2.  A valid WRDS account to access the Compustat database.
-3.  Clone this repository and open the `.ipynb` file in Jupyter Notebook or JupyterLab.
+
+1.  **Python 3 Environment with Required Libraries**
+    All dependencies are listed in the `requirements.txt` file. You can install them automatically using:
+    ```bash
+    pip install -r requirements.txt
+    ```
+    The core libraries used are:
+    - `pandas`: For data cleaning and financial ratio calculations
+    - `matplotlib`: For visualizing profit margin trends
+    - `wrds`: For accessing the WRDS Compustat database
+
+2.  **Valid WRDS Account**
+    You need an active WRDS account to connect to the Compustat database and retrieve the financial data used in this analysis.
+
+3.  **Run the Notebook**
+    - Clone or download this GitHub repository
+    - Open the `.ipynb` file in Jupyter Notebook or JupyterLab
+    - Run all cells sequentially (WRDS login is required when executing the data acquisition step)
 
 ## 6.Product link /Demo
 https://github.com/shuruichen24/ACC102-miniassignment-track2
